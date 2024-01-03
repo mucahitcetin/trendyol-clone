@@ -1,0 +1,380 @@
+:root{
+    --orange: #f27a1a;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #333333;
+}
+
+/* header */
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: white;
+}
+header img{
+    width: 170px;
+   cursor: pointer;
+}
+
+.bi-search:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+header input{
+    padding: 10px;
+    width: 600px;
+    border: 2px solid rgba(0,0,0,0.1);
+    border-radius: 7px;
+    transition: all ease .4s;
+    outline: none;
+    
+}
+header input:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.177);
+    outline: auto;
+    outline-color: var(--orange);
+    transition: all ease .4s;
+}
+
+header .icons{
+    display: flex;
+    gap: 30px;
+}
+
+header .input-area{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+header .input-area input{
+    position: relative;
+}
+
+header .input-area i{
+    position: absolute;
+    margin: 10px;
+    color:var(--orange);
+}
+
+.icons i:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    color: var(--orange);
+    cursor: pointer;
+}
+.icons i:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    color: var(--orange);
+    cursor: pointer;
+}
+
+
+.icons span:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    color: var(--orange);
+    cursor: pointer;
+}
+
+/* kategoriler */
+.categories{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    list-style: none;
+    font-weight: bolder;
+}
+
+.categories li:hover{
+    color: var(--orange);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.categories span{
+    background-color: #dc2e2e;
+    color: white;
+    padding: 3px;
+    border-radius: 10px;
+}
+.brands{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.brands img{
+    width: 65px;
+    border-radius: 50px;
+}
+
+.brands img:hover{
+    border: 2px solid var(--orange);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.brands div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.brands span{
+   font-weight: bold;
+}
+
+.brands span:hover{
+    color: var(--orange);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.gif{
+    height: 80px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.gif img{
+    width: 100%;
+}
+
+.tittles{
+    display: flex;
+    justify-content: center;
+}
+
+.tittles img{
+    width: 400px;
+    padding: 30px;
+}
+
+.tittles img:hover{
+    scale: 1.05;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.cards {
+    border: 2px solid antiquewhite;
+    background-color: rgba(250, 235, 215, 0.313);
+    border-radius: 10px;
+    padding: 30px;
+  }
+  
+  .cards h2 {
+    padding: 10px;
+  }
+  
+  .card{
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+  }
+  
+  .card-all{
+      display: flex;
+      justify-content: center;
+      background-color: rgba(250, 235, 215, 0.313);
+      padding: 10px;
+  }
+  
+  .card-info{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin: 10px;
+      border: 1px solid rgba(128, 128, 128, 0.358);
+      width: 270px;
+      border-radius: 10px;
+  }
+  
+  .card-info img {
+    border-radius: 10px;
+    height: 240px;
+    width: 200px;
+    margin: 10px;
+  }
+  
+  .card-info img:hover {
+    scale: 1.03;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  
+  .card-info .description h4 {
+    font-weight: bold;
+  }
+  
+  .card-info .description h5 {
+    color: gray;
+  }
+  
+  .card-info .description {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 13px;
+  }
+  
+  .card-info p {
+    color: orangered;
+    display: flex;
+  }
+
+.img-container{
+    display: grid;
+    place-items: center;
+    gap: 20px;
+    padding: 10px;
+    grid-template-columns: auto auto auto;
+}
+
+.img-container img{
+   width: 400px;
+   border-radius: 10px;
+}
+
+.img-container img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgb(97, 97, 97);
+    transition: .5s;
+ }
+
+.tags{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+}
+
+.tags h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+.tags a{
+    text-decoration: none;
+    gap: 10px;
+    font-size: 14px;
+    color: #333;
+    padding: 20px;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+    margin: 10px;
+    
+}
+
+.tags a:hover{
+    color: var(--orange);
+    border-color: var(--orange);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.content{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popular{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.popular li{
+    list-style-type: none;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    height: 270px;
+}
+
+
+
+footer .foot-title{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.foot-list{
+    padding: 20px;
+    background-color: black;
+}
+
+footer .foot-list ul li{
+    color: white;
+    list-style-type: none;
+    font-size: 13px;
+}
+
+footer .foot-img1 img{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: 7px;
+    left: 100px
+}
+footer .foot-img2 img{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    left: 500px;
+    bottom: 50px;
+}
+
+
+footer .foot-img .foot-icons {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    background-color: black;
+
+}
+
+.foot-icons i:nth-child(1){
+    color: blue;
+}
+
+.foot-icons i:nth-child(2){
+    color: aqua;
+}
+
+.foot-icons i:nth-child(3){
+    color: purple;
+}
